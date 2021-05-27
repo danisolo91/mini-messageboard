@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form action="/new" method="POST" autocomplete="off">
+        <div class="formgroup">
+            <input type="text" name="user" placeholder="Your name" required />
+        </div>
+        <div class="formgroup">
+            <textarea name="message" placeholder="Message" cols="30" rows="10" required></textarea>
+        </div>
+        <input type="submit" value="Save" />
+    </form>
+  </body>
+</html>

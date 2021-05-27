@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <a href="/new">Add new message</a>
+    <% messages.forEach(function(message) { %>
+      <p><b><%= message.user %></b>: <%= message.text %></p>
+    <% }); %>
+  </body>
+</html>
